@@ -28,7 +28,6 @@
 		socket.emit('message', $('#i').val(), $('#m').val());
 		$("#messages").prepend('<li>'+$('#i').val() + ': ' + $('#m').val()+'</li>');
 		$('#m').val('');
-		$('#i').val('');
 		return false;
 	  });
 	</script>
