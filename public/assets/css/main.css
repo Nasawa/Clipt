@@ -1191,5 +1191,5 @@
     border: solid 2px rgba(255,255,255,0.35);
     padding: 0 1em;
     color: rgba(255,255,255,0.35);
-    max-width: 350px;
+    width: 500px;
 }
