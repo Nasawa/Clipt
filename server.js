@@ -6,13 +6,7 @@ var port = process.env.PORT || 3000;
 
 var app = express();
 
-//app.use("/styles", express.static(__dirname + '/styles'));
-app.use(express.static(path.join(__dirname, 'assets')));
-app.use(express.static(path.join(__dirname, 'images')));
-/*app.use("/styles/css", express.static(__dirname + '/styles/css'));
-app.use("/styles/js", express.static(__dirname + '/styles/js'));
-app.use("/styles/fonts", express.static(__dirname + '/styles/fonts'));
-app.use("/images", express.static(__dirname + '/images'));*/
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
