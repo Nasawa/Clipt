@@ -1,12 +1,14 @@
-var app = require('express')();
+var express = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var path = require('path');
 var port = process.env.PORT || 3000;
 
+var app = express();
+
 //app.use("/styles", express.static(__dirname + '/styles'));
-app.use(app.static(path.join(__dirname, 'assets')));
-app.use(app.static(path.join(__dirname, 'images')));
+app.use(express.static(path.join(__dirname, 'assets')));
+app.use(express.static(path.join(__dirname, 'images')));
 /*app.use("/styles/css", express.static(__dirname + '/styles/css'));
 app.use("/styles/js", express.static(__dirname + '/styles/js'));
 app.use("/styles/fonts", express.static(__dirname + '/styles/fonts'));
