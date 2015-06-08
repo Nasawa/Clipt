@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Clipt - Webclient</title>
+	<head>
+	<body>
+	Welcome to the Clipt web client. Please note that due to web restraints, this client will not interact with your clipboard. You must copy the logged data yourself.<br>
+	If you have a simple fix for this, please fork my git repo at <a href="https://github.com/nasawa/clipt">https://github.com/nasawa/clipt</a>.
+		<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+		<script>
+		var socket = io();
+		var id = (window.location + "").split("id/")[1];
+
+		socket.on(id+"", function(msg)
+		{
+			document.write(msg);
+		});
+		</script>
+	</body>
+</html>

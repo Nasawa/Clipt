@@ -10,6 +10,10 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
 });
 
+app.get('/id/*', function(req, res){
+  res.sendFile(__dirname + '/webclient.html');
+});
+
 io.on('connection', function(socket){
 	console.log("Connection: " + socket.id);
 	socket.emit('id', socket.id);
