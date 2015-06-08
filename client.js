@@ -19,4 +19,3 @@ socket.on('id', function(i)
 		clip.copy(msg);
 	});
 })
-//socket.emit('private message', { user: 'me', msg: 'whazzzup?' });
