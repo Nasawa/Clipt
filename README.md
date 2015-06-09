@@ -2,7 +2,7 @@
 
 Clipt is a cross-machine clipboard manager served by Node.js, made possible by [`xavi's`](https://github.com/xavi-) [`node-copy-paste`](https://github.com/xavi-/node-copy-paste). Works using [`clip`](http://www.labnol.org/software/tutorials/copy-dos-command-line-output-clipboard-clip-exe/2506/) (for Windows), [`pbcopy/pbpaste`](https://developer.apple.com/library/mac/#documentation/Darwin/Reference/Manpages/man1/pbcopy.1.html) (for OSX), [`xclip`](http://www.cyberciti.biz/faq/xclip-linux-insert-files-command-output-intoclipboard/) (for Linux and OpenBSD (*don't forget to __apt-get install xclip__*)).
 
-I currently have clients for Node, Python, Ruby, C#, and the browser. The server is only in Node.js.
+I currently have clients for Node, Python, Ruby, and the browser. The server is only in Node.js.
 
 ## Using Clipt
 
