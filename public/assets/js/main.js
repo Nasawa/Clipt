@@ -104,6 +104,31 @@
 				}, settings.delay);
 
 		})();
+    
+        $(".ll").on('click', function()
+        {
+            $(".active").removeClass('active');
+            $(this).find('.logo').addClass('active');
+            
+            var item = $(".active").first();
+            var index = $(".logo").index(item);
+            var text = "";
+            
+            if(index === 0)
+            {
+                text = "$ git clone https://github.com/nasawa/clipt.git<br>$ nodejs client.js clipt.azurewebsites.net [id]";
+            }
+            else if (index === 1)
+            {
+                text = "$ git clone https://github.com/nasawa/clipt.git<br>$ python client.py clipt.azurewebsites.net [id]";
+            }
+            else
+            {
+                text = "<a href='/id/"+uuid()+"'>clipt.azurewebsites.net/id/[id]</a><br>&nbsp;";
+            }
+            
+            $(".well").html(text);
+        });
 
 	// Signup Form.
 		(function() {
@@ -176,3 +201,13 @@
 		})();
 
 })();
+
+function uuid(){
+    var d = new Date().getTime();
+    var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        var r = (d + Math.random()*16)%16 | 0;
+        d = Math.floor(d/16);
+        return (c=='x' ? r : (r&0x3|0x8)).toString(16);
+    });
+    return uuid;
+}

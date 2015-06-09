@@ -1,3 +1,18 @@
 #header h1 {
     font-family: 'Leckerli One', cursive;
 }
+
+.ll, .ll:link, .ll:hover, .ll:active, .ll:visited {
+    text-decoration: none !important;
+    border-bottom-color: transparent;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    opacity: .5;
+}
+
+.logo:hover, .logo.active {
+    opacity: 1;
+}
