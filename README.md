@@ -4,8 +4,6 @@ Clipt is a cross-machine clipboard manager served by Node.js, made possible by [
 
 I currently have clients for Node, Python, Ruby, C#, and the browser. The server is only in Node.js.
 
-**Note:** The Ruby client currently only connects to a self-hosted server. I'm currently looking into this, and any help would be appreciated.
-
 ## Using Clipt
 
 Clipt's clients take the following arguments:
@@ -19,7 +17,7 @@ If you're looking to host your own server, simply git clone this repo:
 
 	git clone git://github.com/nasawa/clipt.git
 	
-If you just want to connect to the default server at http://clipt.azurewebsites.net/, just use any of the included clients.
+If you just want to connect to the default server at http://clipt.azurewebsites.net/, simply use any of the included clients.
 
 ## Todo
 

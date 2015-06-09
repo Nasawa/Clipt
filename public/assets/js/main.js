@@ -122,6 +122,10 @@
             {
                 text = "$ git clone https://github.com/nasawa/clipt.git<br>$ python client.py clipt.azurewebsites.net [id]";
             }
+            else if (index === 2)
+            {
+                text = "$ git clone https://github.com/nasawa/clipt.git<br>$ ruby client.rb http://clipt.azurewebsites.net [id]";
+            }
             else
             {
                 text = "<a href='/id/"+uuid()+"'>clipt.azurewebsites.net/id/[id]</a><br>&nbsp;";
