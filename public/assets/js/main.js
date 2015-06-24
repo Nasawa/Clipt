@@ -134,6 +134,11 @@
             $(".well").html(text);
         });
 
+		$(".slideStop").click(function()
+		{
+			$("#bg").remove();
+		});
+
 	// Signup Form.
 		(function() {
 
