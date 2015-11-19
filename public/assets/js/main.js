@@ -126,6 +126,10 @@
             {
                 text = "$ git clone https://github.com/nasawa/clipt.git<br>$ ruby client.rb http://clipt.azurewebsites.net [id]";
             }
+			else if (index == 3)
+			{
+				text = "$ git clone https://github.com/nasawa/clipt.git<br>Extract ms-client.zip & run Clipt.exe"
+			}
             else
             {
                 text = "<a href='/id/"+uuid()+"'>clipt.azurewebsites.net/id/[id]</a><br>&nbsp;";
